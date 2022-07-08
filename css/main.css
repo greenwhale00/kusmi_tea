@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+     /* outline: 1px dashed red;/ */
+}
+
+
+
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.top_banner {
+    position: sticky;
+    inset: 0 auto auto 0;
+    width: 100%;
+    padding: 10px 0;
+    background: #f1f1f1;
+    z-index: 999;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.top_banner .inner {
+    position: relative;
+}
+
+.top_banner h3 {
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+
+.top_banner i {
+    position: absolute;
+    inset: 0 0 auto auto;
+    font-size: 15px;
+    padding: 5px;
+    background: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header {
+    line-height: 90px;
+
+}
+
+.header .container {
+    justify-content: space-between;
+}
+
+.header .gnb {
+    display: flex;
+}
+
+.header .gnb_se {
+    display: flex;
+}
+
+.header nav>ul {
+    display: flex;
+}
+
+.header .gnb>ul>li>a {
+    padding: 0 15px;
+    font-size: 17px;
+}
+
+/* 형제를 선택하면 자기자신은 제외 */
+.header nav>ul>li~li::before {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 14px;
+    background: #ddd;
+
+}
+
+.header a {
+    display: inline-block;
+}
+
+.header .gnb_se>ul>li>a {
+    padding: 0 10px;
+    font-size: 13px;
+}
+
+
+.main_Visual {
+    position: relative;
+}
+
+.main_Visual .main_Img figure {
+    position: relative;
+    height: 70vh;
+
+}
+
+.main_Visual .main_Img figure {
+    background: url(../img/main_visual__.jpg) no-repeat center center/cover;
+}
+
+
+.main_Visual .main_Img .in {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    color: #FCF6F5;
+    text-shadow: 0 0 3px #666;
+
+    font-family: 'Playfair Display', serif;
+}
+
+
+.main_Visual .main_Img .in h2 {
+    font-size: 90px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.main_Visual .main_Img .in p {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+
+
+.best_selling {
+    padding: 150px 0;
+    text-align: center;
+}
+
+.best_selling h2 {
+    margin: 0 0 10px 0;
+    font-size: 25px;
+    font-weight: 700;
+
+}
+
+.best_selling P {
+    margin: 0 0 30px 0;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+}
+
+.best_selling .container {
+    gap: 30px;
+}
+
+.best_selling .container figure {
+    flex: 1;
+}
+
+
+
+
+.best_selling .container img {
+    margin: 0 0 5px 0;
+}
+
+.best_selling .container strong {
+    display: block;
+    margin: 0 0 10px 0;
+    font-size: 17px;
+}
+
+.best_selling .container p {
+    display: block;
+    margin: 0 0 20px 0;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.best_selling .container a:hover {
+    background: #333;
+    color: #fff;
+}
+
+.best_selling .container a {
+    display: inline-block;
+    padding: 8px 50px;
+    border: 1px solid #333;
+    background: fff;
+    color: #333;
+    font-size: 15px;
+}
+
+
+.organic figure {
+    background: url(../img/2022_01-kusmi_devient_bio-HEADER_EN.jpg) no-repeat center center/cover;
+}
+
+
+.mainContent2 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainContent2 .content {
+    display: flex;
+
+}
+
+.mainContent2 .content figure {
+    flex: 1;
+}
+
+.mainContent2 .content .in_box {
+    width: auto;
+}
+
+.customer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 50px;
+}
+
+.customer>div {
+    flex: 1;
+}
+
+.customer .left {
+    text-align: right;
+    background: url(../img/ice01.jpg) no-repeat center center/cover;
+}
+
+.customer .right {
+    text-align: left;
+    background: #F29F80;
+
+}
+
+.customer>div a {
+    display: block;
+    color: #fff;
+    padding: 150px 60px;
+    text-shadow: 0 0 3px var(--dc);
+
+}
+
+.customer>div h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+}
+
+.customer>div p {
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 0 0 20px 0;
+}
+
+.product {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.product .inner .inbox {
+    justify-content: center;
+}
+
+.product .inner .inbox .product_slider {
+    text-align: center;
+}
+
+.product .inner .inbox storng {
+    margin: 0 0 10px 0;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+
+.product .inner .product_slider figure {
+    padding: 0 15px;
+    font-size: 13px;
+}
+
+.product .inner .product_slider figure img {
+    display: block;
+    margin: 0px auto;
+}
+
+.product .inner .product_slider figure.slick-center img {}
+
+.product .inner .product_slider .inbox {
+    margin: 0 0 10px 0;
+    overflow: hidden;
+}
+
+.product .inner .product_slider strong {
+    display: block;
+    font-size: 17px;
+    margin: 0 0 10px 0;
+}
+
+.product .inner .product_slider p {
+    display: block;
+    margin: 0 0 20px 0;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.product .inner .product_slider a:hover {
+    background: #333;
+    color: #fff;
+}
+
+.product .inner .product_slider a {
+    display: inline-block;
+    padding: 8px 50px;
+    border: 1px solid #333;
+    background: #fff;
+    color: #333;
+    font-size: 15px;
+    margin: 0 0 10px 0;
+}
+
+.product .inner .product_slider .slick-dots {
+    padding: 20px;
+}
+
+.product .inner .product_slider .slick-dots li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.product .inner .product_slider .slick-dots li button {
+    border: none;
+    outline: none;
+    padding: 0 0;
+    background: #ddd;
+    color: #fff;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    font-size: 0;
+}
+
+.product .inner .product_slider .slick-dots li.slick-active button {
+    background: #F29F80;
+}
+
+.product .inner .productArrows i {
+    position: absolute;
+    inset: 40% auto auto 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    background: #F29F80;
+    color: #fff;
+    width: 30px;
+    height: 40px;
+}
+
+.product .inner .productArrows i:nth-child(1) {
+    margin: 0 0 0 -600px;
+}
+
+.product .inner .productArrows i:nth-child(2) {
+    margin: 0 0 0 600px;
+}
+
+
+
+.youtube .ytb {
+    padding: 30px 0 100px 0;
+}
+
+.youtube .ytb .left .case {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+
+.youtube .ytb .left iframe {
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+
+.fixedBg {
+    padding: 100px;
+    text-align: center;
+    color: #fff;
+    background: url(../img/2020_bio-textimg2-V5.jpg) no-repeat fixed center center/cover;
+    margin-bottom: 150px;
+}
+
+.fixedBg h2 {
+    margin: 0 0 10px 0;
+    font-size: 60px;
+    font-weight: 600;
+    color: #FCF6F5;
+    text-shadow: 0 0 3px #666;
+    font-family: 'Playfair Display', serif;
+}
+
+.fixedBg p {
+    margin: 0 0 30px 0;
+    font-size: 21px;
+    font-weight: 400;
+    color: #FCF6F5;
+    text-shadow: 0 0 3px #666;
+    font-family: 'Playfair Display', serif;
+}
+
+.choice {
+    padding: 50px 0 100px 0;
+    text-align: center;
+}
+
+.choice h2 {
+    margin: 0 0 10px 0;
+    font-size: 25px;
+    font-weight: 700;
+
+}
+
+.choice P {
+    margin: 0 0 60px 0;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+}
+
+.choice .container .choose_img {
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+}
+
+.choice.container figure {
+    flex: 1;
+}
+
+.choice .container img {
+    margin: 0 0 25px 0;
+}
+
+.choice .container strong {
+    display: block;
+    margin: 0 0 25px 0;
+    font-size: 17px;
+}
+
+
+
+
+.choice .container a {
+    display: inline-block;
+    border: 1px solid #333;
+    font-size: 15px;
+    padding: 8px 50px;
+    background: #fff;
+    color: #333;
+    font-size: 15px;
+    margin: 0 0 10px 0;
+}
+
+
+.choice .container a:hover {
+    background: #333;
+    color: #fff;
+}
+
+.all {
+    background: #FCF6F5;
+    padding: 50px 0 100px 0;
+}
+
+
+.i_go .from {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.all .i_go .from h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0px 0 15px 0;
+    padding: 30px 0 0 0;
+
+}
+
+.all .i_go .from p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0 0 50px 0;
+
+}
+
+
+.instagram {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+
+
+.instagram .insta {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.instagram .insta .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.instagram .insta .content figure {
+    flex: 25%;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+.footer {
+    background: #333;
+    color: #ddd;
+}
+
+
+.footer .footer_top {
+    padding: 15px 0;
+    background: #F29F80;
+    color: #fff;
+    font-weight: 300;
+    border-top: 1px solid #ddd;
+
+}
+
+.footer .top {
+    width: 1200px;
+    margin: 0 auto;
+  
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.footer .footer_top .top>dl {
+    display: flex;
+    line-height: 30px;
+    gap: 20px;
+}
+
+.footer .footer_top .footer_con dl dd {
+    padding-right: 30px;
+}
+
+.footer .footer_top .footer_con dl dd a {
+    display: block;
+}
+
+.footer .footer_top .footer_con .sns {
+    vertical-align: middle;
+}
+
+.footer .footer_top .top .sns i {
+    display: inline-block;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.footer .footer_bottom {
+    padding: 40px 0 50px 0;
+}
+
+
+.footer .footer_bottom .container {
+    justify-content: space-between;
+}
+
+
+.footer .footer_bottom .container .footer_left {
+    text-align: left;
+}
+
+
+.footer .footer_bottom .container .footer_left strong {
+    display: block;
+    font-weight: 400;
+    font-size: 15pxpx;
+    margin-bottom: 10px;
+}
+
+.footer .footer_bottom .container .footer_left .tel {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.footer .footer_bottom .container .footer_left p {
+    display: block;
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.footer .footer_bottom .container .footer_right {
+    justify-content: center;
+    text-align: right;
+    line-height: 20px;
+    font-size: 11px;
+}
+
+.footer .footer_bottom .container .footer_left .copy {
+    font-size: 11px;
+}
